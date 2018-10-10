@@ -35,7 +35,6 @@ const postWords = (word_array) => {
   word_array.forEach((word) => {
     postWord(word)
   })
-  getTopWord();
 };
 
 const postWord = (posted_word) => {
@@ -44,6 +43,7 @@ const postWord = (posted_word) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify( {word: {value: posted_word} } )
   })
+  getTopWord();
 }
 
 const findTopWord = (word) => {
