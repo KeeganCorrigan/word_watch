@@ -51,8 +51,8 @@ const findTopWord = (word) => {
   let top_word_count = Object.values(word.word)
 
   $('#top-word-container').html(`
-    <p> ${top_word} </p>
-    <p> ${top_word_count} </p>
+    <p> Most used word: ${top_word} </p>
+    <p> Total times word was used: ${top_word_count} </p>
     `)
 }
 
