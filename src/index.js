@@ -18,7 +18,7 @@ const submitText = (event) => {
   let split_string = text.split(" ")
 
   if (split_string.length > 0) {
-    postWords(split_string)
+    postWords(split_string);
     clearTextArea();
   }
 };
